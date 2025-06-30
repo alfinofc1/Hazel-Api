@@ -17,7 +17,7 @@ module.exports = function(app) {
             const result = await getRandomBaskara();
             res.json({
                 status: true,
-                creator: 'Hazel',
+                creator: "JagoMerah",
                 baskara: result
             });
         } catch (error) {

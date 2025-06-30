@@ -17,7 +17,7 @@ module.exports = function(app) {
             const result = await getRandomMotivasi();
             res.json({
                 status: true,
-                creator: 'Hazel',
+                creator: "JagoMerah",
                 message: result
             });
         } catch (error) {

@@ -17,7 +17,7 @@ module.exports = function(app) {
             const result = await getRandomKata();
             res.json({
                 status: true,
-                creator: 'Hazel',
+                creator: "JagoMerah",
                 message: result
             });
         } catch (error) {

@@ -15,7 +15,7 @@ module.exports = function(app) {
             const result = await getRandomQuote();
             res.json({
                 status: true,
-                creator: 'Hazel',
+                creator: "JagoMerah",
                 character: result.character,
                 content: result.content,
                 info: result.status,
