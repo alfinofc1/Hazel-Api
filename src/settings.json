@@ -1,6 +1,6 @@
 {
-    "name": "Hazel Api's",
-    "version": "v1.0.0",
+    "name": "JAGO Api's",
+    "version": "v2.0.0",
     "description": "Simple and easy to use API.",
     "bannerImage": "/src/banner.jpg",
     "header": {
