@@ -123,7 +123,7 @@ module.exports = function (app) {
 
       res.json({
         status: true,
-        creator: 'Hazel',
+        creator: 'jagoapi',
         result: {
           status: 'Aktif',
           totalrequest: totalRequest.toString(),

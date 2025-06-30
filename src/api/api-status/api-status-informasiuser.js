@@ -29,7 +29,7 @@ module.exports = function (app) {
 
       res.json({
         status: true,
-        creator: 'Hazel',
+        creator: 'jagoapi',
         result: {
           antiddos: 'Aktif',
           userid: userId,
