@@ -33,7 +33,7 @@ module.exports = function (app) {
 
       res.json({
         status: true,
-        creator: 'Hazel',
+        creator: "JagoMerah",
         keyword: q,
         total: results.length,
         hasil: results

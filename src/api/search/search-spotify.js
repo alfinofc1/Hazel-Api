@@ -7,7 +7,7 @@ module.exports = function (app) {
             if (!q) {
                 return res.json({
                     status: false,
-                    creator: "Hazel",
+                    creator: "JagoMerah",
                     error: "Query is required"
                 });
             }
@@ -20,21 +20,21 @@ module.exports = function (app) {
             if (!result || result.length === 0) {
                 return res.json({
                     status: false,
-                    creator: "Hazel",
+                    creator: "JagoMerah",
                     error: "No data found"
                 });
             }
 
             res.json({
                 status: true,
-                creator: "Hazel",
+                creator: "JagoMerah",
                 result: result
             });
 
         } catch (error) {
             res.status(500).json({
                 status: false,
-                creator: "Hazel",
+                creator: "JagoMerah",
                 error: error.message
             });
         }

@@ -7,7 +7,7 @@ module.exports = function (app) {
         if (!q) {
             return res.json({
                 status: false,
-                creator: "Hazel",
+                creator: "JagoMerah",
                 error: "Query is required"
             });
         }
@@ -24,7 +24,7 @@ module.exports = function (app) {
                 if (result) {
                     return res.json({
                         status: true,
-                        creator: "Hazel",
+                        creator: "JagoMerah",
                         result
                     });
                 }
@@ -36,7 +36,7 @@ module.exports = function (app) {
 
         res.json({
             status: false,
-            creator: "Hazel",
+            creator: "JagoMerah",
             error: "Lyrics not found in all sources."
         });
     });

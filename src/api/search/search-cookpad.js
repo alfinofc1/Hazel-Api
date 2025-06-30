@@ -18,7 +18,7 @@ module.exports = function (app) {
       // Ganti creator-nya tapi sisanya tetap
       const modified = {
         ...data,
-        creator: 'Hazel' // <- ganti sesuai nama lu
+        creator: 'jago' // <- ganti sesuai nama lu
       };
 
       res.json(modified);
