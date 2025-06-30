@@ -26,13 +26,13 @@ module.exports = function(app) {
 
             res.status(200).json({
                 status: true,
-                creator: "Hazel",
+                creator: "JagoMerah",
                 result: result.result || result.message || "GPT Turbo-nya diem ajaa 😳"
             });
         } catch (error) {
             res.status(500).json({
                 status: false,
-                creator: "Hazel",
+                creator: "JagoMerah",
                 result: "Maaf yaa sayangg, GPT Turbo-nya lagi errorr 😭💕"
             });
         }

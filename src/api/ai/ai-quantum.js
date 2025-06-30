@@ -98,7 +98,7 @@ module.exports = function (app) {
             if (localResponse) {
                 return res.status(200).json({
                     status: true,
-                    creator: "Hazel",
+                    creator: "JagoMerah",
                     source: "Quantum AI",
                     speed_ms: 0,
                     result: localResponse
@@ -108,7 +108,7 @@ module.exports = function (app) {
             const result = await quantumRandomAI(text);
             return res.status(result.status ? 200 : 500).json({
                 status: result.status,
-                creator: "Hazel",
+                creator: "JagoMerah",
                 source: "Quantum AI", // fix here: always "Quantum AI"
                 speed_ms: result.speed_ms || null,
                 result: result.result
@@ -116,7 +116,7 @@ module.exports = function (app) {
         } catch (err) {
             return res.status(500).json({
                 status: false,
-                creator: "Hazel",
+                creator: "JagoMerah",
                 source: "Quantum AI",
                 result: 'Terjadi kesalahan tak terduga 😵'
             });

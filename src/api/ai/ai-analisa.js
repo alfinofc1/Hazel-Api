@@ -30,7 +30,7 @@ module.exports = function (app) {
         const url = `https://api.nekorinn.my.id/ai/gpt-turbo-logic?text=${encodeURIComponent(text)}&logic=${encodeURIComponent(logicPrompt)}`;
         const response = await axios.get(url, {
             headers: {
-                'User-Agent': 'TruepingAI/1.0 (Hazelnut)',
+                'User-Agent': 'TruepingAI/1.0 (jagomerahnut)',
             }
         });
 
@@ -68,14 +68,14 @@ module.exports = function (app) {
 
             res.status(200).json({
                 status: true,
-                creator: "Hazel",
+                creator: "jagomerah",
                 result: result.result || result.message || "Tidak ada jawaban dari AI.",
             });
 
         } catch (error) {
             res.status(500).json({
                 status: false,
-                creator: "Hazel",
+                creator: "jagomerah",
                 result: error.message || "Sistem error.",
             });
         }

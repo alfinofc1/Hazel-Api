@@ -92,7 +92,7 @@ module.exports = function (app) {
             if (localResponse) {
                 return res.status(200).json({
                     status: true,
-                    creator: "Hazel",
+                    creator: "JagoMerah",
                     source: "Astra AI",
                     result: localResponse
                 });
@@ -101,14 +101,14 @@ module.exports = function (app) {
             const result = await AstraAIRandomAI(text);
             return res.status(result.status ? 200 : 500).json({
                 status: result.status,
-                creator: "Hazel",
+                creator: "JagoMerah",
                 source: "Astra AI",
                 result: result.result
             });
         } catch (err) {
             return res.status(500).json({
                 status: false,
-                creator: "Hazel",
+                creator: "jagomera",
                 source: "Astra AI",
                 result: 'Terjadi kesalahan tak terduga 😵'
             });

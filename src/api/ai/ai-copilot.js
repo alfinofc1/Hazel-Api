@@ -23,13 +23,13 @@ module.exports = function(app) {
 
             res.status(200).json({
                 status: true,
-                creator: "Hazel",
+                creator: "JagoMerah",
                 result: result.result || result.message || "Tidak ada respons dari Copilot AI 🥺"
             });
         } catch (error) {
             res.status(500).json({
                 status: false,
-                creator: "Hazel",
+                creator: "JagoMerah",
                 result: "Maaf, terjadi kesalahan saat memproses permintaan Anda."
             });
         }
