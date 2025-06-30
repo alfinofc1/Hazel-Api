@@ -9,7 +9,7 @@ module.exports = function(app) {
             // Ambil field yang dibutuhkan aja
             const modified = {
                 status: original.status,
-                author: 'Hazel', // ganti creator ke author
+                author: 'jago', // ganti creator ke author
                 count: original.count,
                 data: original.data
             };
@@ -18,7 +18,7 @@ module.exports = function(app) {
         } catch (error) {
             res.status(500).json({
                 status: false,
-                author: 'Hazel',
+                author: 'jago',
                 message: `Error: ${error.message}`
             });
         }

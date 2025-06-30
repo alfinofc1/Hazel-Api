@@ -6,7 +6,7 @@ module.exports = function (app) {
     if (!kode) {
       return res.status(400).json({
         status: false,
-        creator: 'Hazel',
+        creator: "JagoMerah",
         message: 'parameter ?kode wajib diisi',
       });
     }
@@ -18,14 +18,14 @@ module.exports = function (app) {
       if (!data || !data.length) {
         return res.status(404).json({
           status: false,
-          creator: 'Hazel',
+          creator: "JagoMerah",
           message: 'Data cuaca tidak ditemukan untuk kode ini',
         });
       }
 
       res.json({
         status: true,
-        creator: 'Hazel',
+        creator: "JagoMerah",
         wilayah: data[0].adm4,
         provinsi: data[0].adm1,
         prakiraan: data.map(item => ({
@@ -38,7 +38,7 @@ module.exports = function (app) {
     } catch (e) {
       res.status(500).json({
         status: false,
-        creator: 'Hazel',
+        creator: "JagoMerah",
         message: 'Gagal mengambil data dari BMKG',
         error: e.message,
       });
