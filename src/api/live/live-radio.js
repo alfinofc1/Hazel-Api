@@ -45,7 +45,7 @@ module.exports = function (app) {
         if (!country) {
             return res.status(400).json({
                 status: false,
-                author: 'Hazelnut API',
+                author: 'jagi API',
                 error: 'Parameter ?country= wajib diisi.'
             });
         }
@@ -56,7 +56,7 @@ module.exports = function (app) {
         if (isRateLimited(ip)) {
             return res.status(429).json({
                 status: false,
-                author: 'Hazelnut API',
+                author: 'jago API',
                 error: 'Rate limit exceeded. Maksimal 5 request per jam.'
             });
         }
@@ -67,7 +67,7 @@ module.exports = function (app) {
             if (!result || result.length === 0) {
                 return res.json({
                     status: true,
-                    author: 'Hazelnut API',
+                    author: 'jago API',
                     message: `Tidak ada stasiun radio dari negara ${country} yang ditemukan.`,
                     data: []
                 });
@@ -85,7 +85,7 @@ module.exports = function (app) {
 
             res.json({
                 status: true,
-                author: 'Hazelnut API',
+                author: 'jago API',
                 total: output.length,
                 data: output
             });
@@ -93,7 +93,7 @@ module.exports = function (app) {
         } catch (error) {
             res.status(500).json({
                 status: false,
-                author: 'Hazelnut API',
+                author: 'jago API',
                 error: 'Gagal mengambil data radio.',
                 message: error.message
             });
