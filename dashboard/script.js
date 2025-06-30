@@ -2,7 +2,7 @@
   // Ambil data statistik API
   async function updateAPICards() {
     try {
-      const res = await fetch("https://zelapioffciall.vercel.app/api-status/status");
+      const res = await fetch("https://ptereodactyl.my.id/api-status/status");
       const json = await res.json();
       const data = json.result;
 
