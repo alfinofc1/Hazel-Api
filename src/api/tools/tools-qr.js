@@ -7,7 +7,7 @@ module.exports = function (app) {
     if (!text) {
       return res.status(400).json({
         status: false,
-        creator: 'Hazel',
+        creator: "JagoMerah",
         message: 'Parameter "text" wajib diisi. Contoh: /tools/text2qr?text=halo cipiti'
       });
     }
@@ -23,7 +23,7 @@ module.exports = function (app) {
     } catch (err) {
       res.status(500).json({
         status: false,
-        creator: 'Hazel',
+        creator: "JagoMerah",
         message: 'Gagal menghasilkan QR Code',
         error: err.message
       });

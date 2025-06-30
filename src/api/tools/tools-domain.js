@@ -21,7 +21,7 @@ module.exports = function (app) {
       const { data } = await axios.get(whoisURL);
 
       const modified = {
-        creator: 'Hazel', // nama kamu
+        creator: "JagoMerah", // nama kamu
         domain: q,
         ip: ip,
         isp: data.connection?.isp,

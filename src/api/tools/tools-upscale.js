@@ -7,7 +7,7 @@ module.exports = function (app) {
     if (!image_url) {
       return res.status(400).json({
         status: false,
-        creator: 'Hazel',
+        creator: "JagoMerah",
         message: 'Parameter "image_url" wajib diisi. Contoh: /imagecreator/hdin?image_url=https://example.com/foto.jpg'
       });
     }
@@ -20,7 +20,7 @@ module.exports = function (app) {
 
       return res.json({
         status: response.data.status,
-        creator: 'Hazel',
+        creator: "JagoMerah",
         message: response.data.message || 'Berhasil upscale gambar',
         url: imageResult
       });
@@ -28,7 +28,7 @@ module.exports = function (app) {
     } catch (err) {
       return res.status(500).json({
         status: false,
-        creator: 'Hazel',
+        creator: "JagoMerah",
         message: 'Gagal Menghubungi Server',
         error: err.message
       });

@@ -23,7 +23,7 @@ module.exports = function(app) {
         if (!link || !text) {
             return res.json({ 
                 status: false,
-                creator: 'Hazel',
+                creator: "JagoMerah",
                 user: link || null,
                 pesan: text || null,
                 result: 'link and text are required'
@@ -34,7 +34,7 @@ module.exports = function(app) {
             const hasil = await ngl(link, text);
             res.status(200).json({
                 status: true,
-                creator: 'Hazel',
+                creator: "JagoMerah",
                 user: link,
                 pesan: text,
                 result: hasil
@@ -42,7 +42,7 @@ module.exports = function(app) {
         } catch (error) {
             res.status(500).json({
                 status: false,
-                creator: 'Hazel',
+                creator: "JagoMerah",
                 user: link,
                 pesan: text,
                 result: error.message
