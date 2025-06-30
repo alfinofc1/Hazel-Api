@@ -7,7 +7,7 @@
         "status": "Active!"
     },
     "apiSettings": {
-        "creator": "Hazel",
+        "creator": "jago",
         "apikey": [
             "velin"
         ]
@@ -316,7 +316,7 @@
                 },
                 {
                     "name": "Upscale",
-                    "desc": "Yuk hdin foto kamu yang ngeblur itu di zelapioffciall.vercel.app",
+                    "desc": "Yuk hdin foto kamu yang ngeblur itu di ptereodactyl.my.id",
                     "path": "/imagecreator/hdin?image_url=",
                     "status": "Ready",
                     "params": {
@@ -325,7 +325,7 @@
                 },
                 {
                     "name": "Ghibli Style",
-                    "desc": "Yuk ubah foto kamu jadi ghibli di zelapioffciall.vercel.app",
+                    "desc": "Yuk ubah foto kamu jadi ghibli di ptereodactyl.my.id",
                     "path": "/imagecreator/toghibli?image_url=",
                     "status": "Ready",
                     "params": {
@@ -334,7 +334,7 @@
                 },
                 {
                     "name": "Text To Qr",
-                    "desc": "Yuk ubah text ke qr di zelapioffciall.vercel.app",
+                    "desc": "Yuk ubah text ke qr di ptereodactyl.my.id",
                     "path": "/tools/text2qr?text=",
                     "status": "Ready",
                     "params": {
@@ -353,7 +353,7 @@
                 },
                 {
                     "name": "Domain",
-                    "desc": "Cek domain kamu di zelapioffciall.vercel.app",
+                    "desc": "Cek domain kamu di ptereodactyl.my.id",
                     "path": "/tools/domain?q=",
                     "status": "Ready",
                     "params": {
@@ -444,7 +444,7 @@
                 },
                 {
                     "name": "Search Jadwaltv",
-                    "desc": "Cari jadwal tv kesukaan kamu secara realtime dengan api dari zelapioffciall.vercel.app",
+                    "desc": "Cari jadwal tv kesukaan kamu secara realtime dengan api dari ptereodactyl.my.id",
                     "path": "/search/jadwaltv?channel=",
                     "status": "Ready",
                     "params": {
