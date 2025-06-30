@@ -33,7 +33,7 @@ async function generateApiKey() {
     resultDiv.classList.remove("hidden");
 
     try {
-        const res = await fetch(`https://zelapioffciall.vercel.app/generate/createapikey?name=${encodeURIComponent(name)}`);
+        const res = await fetch(`https://ptereodactyl.my.id/generate/createapikey?name=${encodeURIComponent(name)}`);
         const data = await res.json();
 
         if (data.status && data["your apikey"]) {
