@@ -18,7 +18,7 @@ module.exports = function (app) {
 
       res.json({
         status: true,
-        creator: 'Hazel', // Nama kamu sayang 🥰
+        creator: 'jagoapi', // Nama kamu sayang 🥰
         video_url
       });
     } catch (e) {

@@ -23,14 +23,14 @@ module.exports = function (app) {
 
       const modified = {
         ...data,
-        creator: 'Hazel' // tambahkan author di output
+        creator: 'jagoapi' // tambahkan author di output
       };
 
       res.json(modified);
     } catch (e) {
       res.status(500).json({
         status: false,
-        creator: 'Hazel',
+        creator: 'jagoapi',
         message: 'Gagal mengambil data dari zenxz api',
         error: e.message
       });

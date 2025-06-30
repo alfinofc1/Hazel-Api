@@ -84,14 +84,14 @@ module.exports = function (app) {
           status: false,
           message: errorMessage,
           httpStatus: statusCode,
-          creator: 'Hazel'
+          creator: 'jagoapi'
         });
       }
 
       res.status(500).json({
         status: false,
         message: 'Terjadi kesalahan internal server',
-        creator: 'Hazel'
+        creator: 'jagoapi'
       });
     }
   });
